@@ -1,0 +1,10 @@
+.danger-text {
+    color: #ff0000;
+}
+
+.verse-text {
+    background-color: #bcf5bc;
+    width: fit-content;
+    max-width: 100%;
+    min-width: 200px;
+}
