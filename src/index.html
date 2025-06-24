@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/public/images/icons/cat-logo.svg" type="image/svg+xml">
     <script src="app.js" defer></script>
-    <title>Питомник</title>
+    <title>Пушистые друзья</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <h1>Тут скоро будет сайт питомника!</h1>
+            <h1>Питомник "Пушистые друзья"</h1>
             <nav class="menu">
                 <ul>
                     <li><a href='index.html'>Главная</a></li>
@@ -30,7 +30,7 @@
                 <ul>
                     <li>Красивыми</li>
                     <li>Умными</li>
-                    <li>И что-нибудь ещё</li>
+                    <li>Ловкими</li>
                 </ul>
 
                 <h3>Характеристики пород:</h3>
@@ -50,29 +50,47 @@
 
                 <p>Вот топ три факта о котиках:</p>
                 <ol>
-                    <li>Первый факт</li>
-                    <li>Второй факт</li>
-                    <li>Третий факт</li>
+                    <li><strong>Кошки не чувствуют сладкого вкуса</strong> - у них отсутствует ген, отвечающий за
+                        восприятие сладкого.
+                    </li>
+                    <li><strong>Они могут пить морскую воду</strong> - в отличие от людей, кошки могут опреснять морскую
+                        воду благодаря
+                        своим сверхэффективным почкам.</li>
+                    <li><strong>Кошки "разговаривают" только с людьми.</strong> Мяуканье - это искуственно созданный
+                        способ общения!</li>
                 </ol>
 
-                <p>Вот вам фотография котика:</p>
-                <figure>
-                    <img src="/public/images/cats/cute_cat.jpg" alt="кот Валера стоит" width="736" height="957"
-                        loading="lazy">
-                    <figcaption>Валера, 1 год. <a href='/public/images/cats/cute_cat.jpg' download>Скачать</a>
-                    </figcaption>
-                </figure>
+                <div class="media-container">
+                    <h3>Наши любимцы</h3>
+                    <div class="media-grid">
+                        <figure class="media-card">
+                            <img src="/public/images/cats/cute_cat.jpg" alt="кот Валера стоит" width="600" height="780"
+                                loading="lazy">
+                            <figcaption>Валера, 1 год. <a href='/public/images/cats/cute_cat.jpg' download>Скачать</a>
+                            </figcaption>
+                        </figure>
 
-                <p>Вот вам GIF с котиком:</p>
-                <img src="/public/gifs/cat-side-eye.gif" alt="рыжий кот презрительно смотрит">
+                        <figure class="media-card gif-container">
+                            <img src="/public/gifs/cat-side-eye.gif" alt="рыжий кот презрительно смотрит" width="400"
+                                height="300" loading="lazy">
+                            <figcaption>Наш рыжий проказник</figcaption>
+                        </figure>
 
-                <p>Внимание, картинка-ссылка:</p>
-                <figure>
-                    <a href="maine-coon.html" aria-label="Подробнее о мейн-куне">
-                        <img src="/public/images/cats/maine-coon.jpg" alt="мейн-кун лежит" loading="lazy">
-                    </a>
-                    <figcaption>Мейн-кун своей персоной</figcaption>
-                </figure>
+                        <figure class="media-card">
+                            <a href="maine-coon.html" aria-label="Подробнее о мейн-куне">
+                                <img src="/public/images/cats/maine-coon.jpg" alt="мейн-кун лежит" width="800"
+                                    height="600" loading="lazy">
+                            </a>
+                            <figcaption>Мейн-кун своей персоной</figcaption>
+                        </figure>
+
+                        <figure class="media-card">
+                            <img src="/public/images/cats/black_cat.jpg" alt="черный кот смотрит" width="600"
+                                height="780" loading="lazy">
+                            <figcaption>Окак</figcaption>
+                        </figure>
+                    </div>
+                </div>
 
                 <blockquote class="verse-text">
                     <p>Мяу мяу мяу
@@ -129,17 +147,37 @@
         </main>
 
         <footer>
-            <p>А здесь мы оставим свои контакты</p>
-            <p>Мы работаем с <time datetime="08:00">8:00</time> до <time datetime="22:00">22:00</time></p>
-            <aside>Здесь могла быть ваша реклама</aside>
-            <a href="#content">В начало</a>
-            <pre>
- /\_/\
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>Email: <a href="mailto:ilyagolubev2021@gmail.com">ilyagolubev2021@gmail.com</a></p>
+                    <p>Телефон: <a href="tel:+79603919169">+79603919169</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Часы работы</h3>
+                    <p>Мы работаем с <time datetime="08:00">8:00</time> до <time datetime="22:00">22:00</time></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="https://t.me/ilyaglbv"><img src="/public/images/icons/telegram.svg" alt="Telegram"
+                                width="24" height="24"></a>
+                        <a href="https://vk.com/iglbv"><img src="/public/images/icons/vk.svg" alt="VK" width="24"
+                                height="24"></a>
+                    </div>
+                </div>
+            </div>
+            <aside class="footer-ad">
+                <p>Здесь могла бы быть ваша реклама</p>
+            </aside>
+            <a href="#content" class="back-to-top">Наверх</a>
+            <pre class="footer-cat">
+/\_/\
 ( o.o )
- = ^ =
+= ^ =
 </pre>
-            <code>&lt; &gt;</code>
-            <p>© 2025 Питомник</p>
+            <code>&lt; Любите котиков &gt;</code>
+            <p class="copyright">© 2025 Питомник "Пушистые друзья"</p>
         </footer>
     </div>
 </body>

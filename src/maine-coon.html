@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/public/images/icons/cat-logo.svg" type="image/svg+xml">
     <script src="app.js" defer></script>
-    <title>Мейн-кун | Питомник</title>
+    <title>Мейн-кун | Пушистые друзья</title>
 </head>
 
 <body>
@@ -24,58 +24,86 @@
         </header>
 
         <main>
-            <article>
-                <figure>
-                    <img src="/public/images/cats/maine-coon.jpg" alt="мейн-кун лежит" loading="lazy">
-                    <figcaption>Мейн-кун своей персоной</figcaption>
-                </figure>
+            <article class="breed-profile">
+                <div class="breed-header">
+                    <figure class="main-image">
+                        <img src="/public/images/cats/maine-coon.jpg" alt="мейн-кун лежит" width="1200" height="900"
+                            loading="eager">
+                        <figcaption>Мейн-кун своей персоной</figcaption>
+                    </figure>
+                </div>
 
-                <h2>Мейн-кун: Кот-легенда</h2>
-                <p>Мейн-кун - одна из самых крупных домашних кошек: вес достигает 8-12 кг, а длина с хвостом - до 1
-                    метра.
-                </p>
-                <p>Отличительные черты:</p>
+                <div class="breed-content">
+                    <h2 id="content">Мейн-кун: Кот-легенда</h2>
+                    <p>Мейн-кун - одна из самых крупных домашних кошек: вес достигает 8-12 кг, а длина с хвостом - до 1
+                        метра.</p>
 
-                <ul>
-                    <li>Пушистая шерсть с густым подшёрстком</li>
-                    <li>Кисточки на ушах, как у рыси</li>
-                    <li>Длинный хвост и мощные лапы</li>
-                    <li>Дружелюбный характер</li>
-                </ul>
+                    <div class="breed-features">
+                        <h3>Отличительные черты:</h3>
+                        <ul>
+                            <li>Пушистая шерсть с густым подшёрстком</li>
+                            <li>Кисточки на ушах, как у рыси</li>
+                            <li>Длинный хвост и мощные лапы</li>
+                            <li>Дружелюбный характер</li>
+                            <li>Отличные охотничьи навыки</li>
+                        </ul>
+                    </div>
 
-                <section>
-                    <h3>Знаменитое сходство!</h3>
-                    <p>Мейн-кунов часто сравнивают с актёром <a href="https://www.kinopoisk.ru/name/6469/">Роном
-                            Перльманом</a> - из-за массивной
-                        челюсти, грубоватых черт морды и "сурового" взгляда. Сам Перльман даже пошутил об этом:</p>
+                    <section class="comparison-section">
+                        <h3>Знаменитое сходство!</h3>
+                        <p>Мейн-кунов часто сравнивают с актёром <a href="https://www.kinopoisk.ru/name/6469/">Роном
+                                Перльманом</a> - из-за массивной челюсти, грубоватых черт морды и "сурового" взгляда.
+                        </p>
 
-                    <blockquote>
-                        <p>Да не похож я на мейн-куна!</p>
-                        <cite>Рон Перльман</cite>
-                    </blockquote>
+                        <blockquote class="celebrity-quote">
+                            <p>Да не похож я на мейн-куна!</p>
+                            <cite>Рон Перльман</cite>
+                        </blockquote>
+                        <figure class="comparison-item">
+                            <img src="/public/images/cats/maine-coon-ron-perlman.jpg"
+                                alt="сравнение мейн-куна и Рона Перльмана" width="800" height="600" loading="lazy">
+                            <figcaption>Скажите же, похожи?</figcaption>
+                        </figure>
+                </div>
                 </section>
+    </div>
+    </article>
+    </main>
 
-                <figure>
-                    <img src="/public/images/cats/maine-coon-ron-perlman.jpg" alt="сравнение мейн-куна и Рона Перльмана"
-                        loading="lazy">
-                    <figcaption>Скажите же, похожи?</figcaption>
-                </figure>
-            </article>
-        </main>
 
-        <footer>
-            <p>А здесь мы оставим свои контакты</p>
-            <p>Мы работаем с <time datetime="08:00">8:00</time> до <time datetime="22:00">22:00</time></p>
-            <aside>Здесь могла быть ваша реклама</aside>
-            <a href="#content">В начало</a>
-            <pre>
- /\_/\
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h3>Контакты</h3>
+                <p>Email: <a href="mailto:ilyagolubev2021@gmail.com">ilyagolubev2021@gmail.com</a></p>
+                <p>Телефон: <a href="tel:+79603919169">+79603919169</a></p>
+            </div>
+            <div class="footer-hours">
+                <h3>Часы работы</h3>
+                <p>Мы работаем с <time datetime="08:00">8:00</time> до <time datetime="22:00">22:00</time></p>
+            </div>
+            <div class="footer-social">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-icons">
+                    <a href="https://t.me/ilyaglbv"><img src="/public/images/icons/telegram.svg" alt="Telegram"
+                            width="24" height="24"></a>
+                    <a href="https://vk.com/iglbv"><img src="/public/images/icons/vk.svg" alt="VK" width="24"
+                            height="24"></a>
+                </div>
+            </div>
+        </div>
+        <aside class="footer-ad">
+            <p>Здесь могла бы быть ваша реклама</p>
+        </aside>
+        <a href="#content" class="back-to-top">Наверх</a>
+        <pre class="footer-cat">
+/\_/\
 ( o.o )
- = ^ =
+= ^ =
 </pre>
-            <code>&lt; &gt;</code>
-            <p>© 2025 Питомник</p>
-        </footer>
+        <code>&lt; Любите котиков &gt;</code>
+        <p class="copyright">© 2025 Питомник "Пушистые друзья"</p>
+    </footer>
     </div>
 </body>
 

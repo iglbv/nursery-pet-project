@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/public/images/icons/cat-logo.svg" type="image/svg+xml">
     <script src="app.js" defer></script>
-    <title>О нас | Питомник</title>
+    <title>О нас | Пушистые друзья</title>
 </head>
 
 <body>
@@ -24,21 +24,83 @@
         </header>
 
         <main>
-            <p>Здесь должен быть контент и история о нашей компании</p>
+            <article class="about-us">
+                <h2 id="content">Наша история</h2>
+                <p>Питомник "Пушистые друзья" был основан в 2025 году группой студентов-энтузиастов, влюблённых в кошек.
+                    Начав с небольшой квартиры и трёх кошек - сегодня мы выросли в современный питомник с просторными
+                    вольерами и подготовленным отзывчивым персоналом.</p>
+
+                <figure>
+                    <img src="/public/images/cats/nursery.jpg" alt="наш питомник" loading="lazy">
+                    <figcaption>Наш питомник сегодня</figcaption>
+                </figure>
+
+                <section>
+                    <h3>Наши принципы</h3>
+                    <ul>
+                        <li>Забота о здоровье каждого животного</li>
+                        <li>Профессиональное разведение с сохранением породных качеств</li>
+                        <li>Социализация котят с раннего возраста</li>
+                        <li>Прозрачность и честность в работе</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Наша команда</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <img src="/public/images/team/ceo.jpg" alt="руководитель" loading="lazy">
+                            <h4>Илья Голубев</h4>
+                            <p>Генеральный директор</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="/public/images/team/breeder.jpg" alt="заводчик" loading="lazy">
+                            <h4>Том Йорк</h4>
+                            <p>Заводчик, эксперт по мейн-кунам</p>
+                        </div>
+                    </div>
+                </section>
+
+                <blockquote>
+                    <p>"Кошки - это не просто животные, это члены семьи. Мы относимся к каждому нашему подопечному с
+                        любовью и уважением."</p>
+                    <cite>Основатель питомника - Илья Голубев</cite>
+                </blockquote>
+            </article>
         </main>
 
         <footer>
-            <p>А здесь мы оставим свои контакты</p>
-            <p>Мы работаем с <time datetime="08:00">8:00</time> до <time datetime="22:00">22:00</time></p>
-            <aside>Здесь могла быть ваша реклама</aside>
-            <a href="#content">В начало</a>
-            <pre>
- /\_/\
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <h3>Контакты</h3>
+                    <p>Email: <a href="mailto:ilyagolubev2021@gmail.com">ilyagolubev2021@gmail.com</a></p>
+                    <p>Телефон: <a href="tel:+79603919169">+79603919169</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Часы работы</h3>
+                    <p>Мы работаем с <time datetime="08:00">8:00</time> до <time datetime="22:00">22:00</time></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-icons">
+                        <a href="https://t.me/ilyaglbv"><img src="/public/images/icons/telegram.svg" alt="Telegram"
+                                width="24" height="24"></a>
+                        <a href="https://vk.com/iglbv"><img src="/public/images/icons/vk.svg" alt="VK" width="24"
+                                height="24"></a>
+                    </div>
+                </div>
+            </div>
+            <aside class="footer-ad">
+                <p>Здесь могла бы быть ваша реклама</p>
+            </aside>
+            <a href="#content" class="back-to-top">Наверх</a>
+            <pre class="footer-cat">
+/\_/\
 ( o.o )
- = ^ =
+= ^ =
 </pre>
-            <code>&lt; &gt;</code>
-            <p>© 2025 Питомник</p>
+            <code>&lt; Любите котиков &gt;</code>
+            <p class="copyright">© 2025 Питомник "Пушистые друзья"</p>
         </footer>
     </div>
 </body>
